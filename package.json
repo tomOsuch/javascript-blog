@@ -7,7 +7,7 @@
     "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdir -p sass css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
-    "init:gitignore": "curl -o .gitignore https://raw.githubusercontent.com/github/gitignore/main/Node.gitignore -o .gitignore",
+    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/main/Node.gitignore -o .gitignore && echo '\n# Generated CSS files from SASS\ncss/' >> .gitignore",
     "test": "npm-run-all test:*",
     "test:html": "html-validator *.html",
     "build": "npm-run-all build:* test",

@@ -1,7 +1,6 @@
 const titleClickHandler = function (event) {
     const clickedElement = this;
     event.preventDefault();
-    console.log('Link was clicked!');
 
     /* TODO [DONE] remove class 'active' from all article links  */
     const activeLinks = document.querySelectorAll('.titles a.active');
@@ -12,7 +11,6 @@ const titleClickHandler = function (event) {
     /* TODO [DONE] add class 'active' to the clicked link */
     console.log('clickedElement:', clickedElement);
     clickedElement.classList.add('active');
-    console.log('clickedElement (with class active):', clickedElement);
 
     /* TODO [DONE] remove class 'active' from all articles */
     const activeArticles = document.querySelectorAll('.posts article.active');
@@ -22,15 +20,12 @@ const titleClickHandler = function (event) {
 
     /* TODO [DONE] get 'href' attribute from the clicked link */
     const articleSelector = clickedElement.getAttribute('href');
-    console.log('articleSelector:', articleSelector);
 
     /* TODO [DONE] find the correct article using the selector (value of 'href' attribute) */
     const targetArticle = document.querySelector(articleSelector);
-    console.log('targetArticle:', targetArticle);
 
     /* TODO [DONE] add class 'active' to the correct article */
     targetArticle.classList.add('active');
-    console.log('targetArticle (with class active):', targetArticle);
 
     /* TODO [DONE] add class 'active' to the correct article */
     targetArticle.classList.add('active');
