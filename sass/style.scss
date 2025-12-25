@@ -1,7 +1,7 @@
 @use "sass:color";
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext');
 
-/* Variables */
+// Variables 
 
 $color-light: #fff;
 $color-dark: #444;
@@ -10,7 +10,7 @@ $font-logo: 'Sacramento', cursive;
 $font-header: 'Oswald', sans-serif;
 $font-text: 'Source Sans Pro', sans-serif;
 
-/* Global */
+// Global 
 
 *,
 *::before,
@@ -45,7 +45,7 @@ body {
     }
 }
 
-/* Layout */
+// Layout 
 
 .wrapper {
     display: flex;
@@ -69,7 +69,7 @@ body {
     border-radius: 5px;
 }
 
-/* Logo */
+// Logo 
 
 .logo {
     font-family: $font-logo;
@@ -79,7 +79,7 @@ body {
     text-align: center;
 }
 
-/* Lists */
+//  Lists 
 
 .list {
     list-style-type: none;
@@ -97,7 +97,7 @@ body {
     }
 }
 
-/* Authors */
+// Authors
 
 .authors {
     li {
@@ -105,7 +105,7 @@ body {
     }
 }
 
-/* Post */
+// Post 
 
 .post {
     display: none;
